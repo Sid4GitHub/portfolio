@@ -1,0 +1,15 @@
+:root {
+    --bg-color: #030712;
+    --bg-light: #111827;
+    --text-color: #f9fafb;
+    --text-secondary: #9ca3af;
+    --accent-color: #8b5cf6;
+    --accent-color-rgb: 139, 92, 246;
+    --accent-hover: #7c3aed;
+    --border-color: #1f2937;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-sans: 'Inter', sans-serif;
+
+    --nav-height: 100px;
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
