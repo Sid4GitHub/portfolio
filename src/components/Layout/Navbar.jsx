@@ -71,7 +71,7 @@ const Navbar = () => {
                         transition={{ delay: navLinks.length * 0.1 }}
                     >
                         <a
-                            href="/assets/docs/resume.pdf"
+                            href={`${import.meta.env.BASE_URL}assets/docs/resume.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
