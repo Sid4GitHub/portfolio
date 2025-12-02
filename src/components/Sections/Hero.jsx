@@ -7,7 +7,7 @@ const Hero = () => {
 
     const one = <h1>Hi, my name is</h1>;
     const two = <h2 style={{ color: 'var(--text-color)', fontSize: 'clamp(40px, 8vw, 80px)', lineHeight: 1.1 }}>Siddhartha Sadhukhan.</h2>;
-    const three = <h3 style={{ color: 'var(--text-secondary)', fontSize: 'clamp(30px, 6vw, 60px)', lineHeight: 1.1, marginTop: '10px' }}>I build things for Data.</h3>;
+    const three = <h3 style={{ color: 'var(--text-secondary)', fontSize: 'clamp(30px, 6vw, 60px)', lineHeight: 1.1, marginTop: '10px' }}>I build the foundational platforms for data.</h3>;
     const four = (
         <div style={{ marginTop: '20px', maxWidth: '540px' }}>
             {loading ? <p>Loading...</p> : (
