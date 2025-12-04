@@ -19,7 +19,7 @@ const Hero = () => {
     );
     const five = (
         <a
-            href="#projects"
+            href="#experience"
             style={{
                 marginTop: '50px',
                 display: 'inline-block',
@@ -34,7 +34,7 @@ const Hero = () => {
             onMouseOver={(e) => e.target.style.background = 'rgba(var(--accent-color-rgb), 0.1)'}
             onMouseOut={(e) => e.target.style.background = 'transparent'}
         >
-            Check out my work!
+            Check out my experience!
         </a>
     );
 

@@ -49,7 +49,7 @@ function App() {
           <Contact />
         </main>
         <footer style={{ padding: '20px 0', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.8rem', fontFamily: 'var(--font-mono)' }}>
-          <p>Designed & Built by Siddhartha Sadhukhan</p>
+          <p>Maintained by Siddhartha Sadhukhan</p>
         </footer>
       </div>
     </ErrorBoundary>
