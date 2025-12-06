@@ -13,7 +13,8 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    style={{ display: 'grid', gridTemplateColumns: '3fr 2fr', gap: '50px', alignItems: 'start' }}
+                    style={{}}
+                    className="about-grid"
                 >
                     <div className="prose">
                         {loading ? <p>Loading...</p> : <ReactMarkdown>{content}</ReactMarkdown>}
