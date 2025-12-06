@@ -41,7 +41,7 @@ const Hero = () => {
     const items = [one, two, three, four, five];
 
     return (
-        <section id="hero" className="section" style={{ minHeight: '100vh', padding: '0' }}>
+        <section id="hero" className="section">
             <div className="container">
                 {items.map((item, i) => (
                     <motion.div
