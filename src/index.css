@@ -368,9 +368,16 @@ p {
 
 @media (max-width: 768px) {
     .contact-card {
-        padding: 1.5rem;
-        background: transparent;
-        box-shadow: none;
-        border: none;
+        padding: 2rem;
+        /* Keep glassmorphism on mobile */
     }
+}
+
+.glow-effect {
+    box-shadow: 0 0 15px rgba(var(--accent-color-rgb), 0.4);
+}
+
+.glow-effect:hover {
+    box-shadow: 0 0 25px rgba(var(--accent-color-rgb), 0.6);
+    transform: translateY(-2px);
 }

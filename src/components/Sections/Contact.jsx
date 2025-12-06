@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiInstagram, FiMail, FiCopy, FiCheck } from 'react-icons/fi';
 import { FaXTwitter } from 'react-icons/fa6';
+import { config } from '../../config';
 
 const Contact = () => {
     const [copied, setCopied] = useState(false);
-    const email = "siddhartha.sadhukhan.2014@gmail.com";
+    const { email } = config;
 
     const handleCopyEmail = () => {
         navigator.clipboard.writeText(email);
@@ -30,7 +31,7 @@ const Contact = () => {
                     </p>
 
                     <div className="contact-actions">
-                        <a href={`mailto:${email}`} className="btn contact-btn">
+                        <a href={`mailto:${email}`} className="btn contact-btn glow-effect">
                             <FiMail /> Say Hello
                         </a>
                         <button onClick={handleCopyEmail} className="btn contact-btn-outline" aria-label="Copy email address">
@@ -40,16 +41,16 @@ const Contact = () => {
                     </div>
 
                     <div className="social-links">
-                        <a href="https://github.com/Sid4GitHub" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+                        <a href={config.socialMedia.github} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                             <FiGithub size={24} />
                         </a>
-                        <a href="https://www.linkedin.com/in/siddhartha-sadhukhan/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
+                        <a href={config.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                             <FiLinkedin size={24} />
                         </a>
-                        <a href="https://x.com/at_siddhartha" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
+                        <a href={config.socialMedia.twitter} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Twitter">
                             <FaXTwitter size={24} />
                         </a>
-                        <a href="https://www.instagram.com/at_siddhartha/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
+                        <a href={config.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                             <FiInstagram size={24} />
                         </a>
                     </div>
