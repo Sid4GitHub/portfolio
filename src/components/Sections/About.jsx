@@ -26,6 +26,21 @@ const About = () => {
                             <div className="prose">
                                 {loading ? <p>Loading...</p> : <ReactMarkdown>{content.replace(/^##\s*About Me/m, '')}</ReactMarkdown>}
                             </div>
+                            <div style={{ marginTop: '2rem' }}>
+                                <a
+                                    href={`${import.meta.env.BASE_URL}assets/docs/resume.pdf`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn"
+                                    style={{
+                                        display: 'inline-block',
+                                        padding: '1rem 1.5rem',
+                                        fontSize: '0.9rem'
+                                    }}
+                                >
+                                    Download Resume
+                                </a>
+                            </div>
                         </div>
 
                         <div style={{ position: 'relative' }}>

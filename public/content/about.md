@@ -14,4 +14,4 @@ Software Professional skilled in developing data-intensive applications, possess
   - *Academy of Technology, Maulana Abul Kalam Azad University of Technology* (2016)
   - DGPA: 8.82
 
-[Download Resume](/assets/docs/resume.pdf)
+
