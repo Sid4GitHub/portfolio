@@ -9,7 +9,14 @@
     --border-color: #1f2937;
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+
+    --card-bg: #112240;
+    --card-hover: #1d2d4c;
+    /* Slightly lighter than card-bg for hover */
 
     --nav-height: 100px;
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    --shadow-light: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
 }
