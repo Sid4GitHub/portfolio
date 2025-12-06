@@ -16,8 +16,15 @@ const About = () => {
                     style={{}}
                     className="about-grid"
                 >
-                    <div className="prose">
-                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content}</ReactMarkdown>}
+                    <div style={{ width: '100%' }}>
+                        <h2 className="section-header">
+                            <span className="section-header-number">01.</span>
+                            About Me
+                            <span className="section-header-line"></span>
+                        </h2>
+                        <div className="prose">
+                            {loading ? <p>Loading...</p> : <ReactMarkdown>{content.replace('## About Me', '')}</ReactMarkdown>}
+                        </div>
                     </div>
 
                     <div style={{ position: 'relative' }}>

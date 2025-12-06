@@ -21,7 +21,7 @@ const Projects = () => {
                     </h2>
 
                     <div className="prose">
-                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content}</ReactMarkdown>}
+                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content.replace('## Personal Projects', '')}</ReactMarkdown>}
                     </div>
                 </motion.div>
             </div>
