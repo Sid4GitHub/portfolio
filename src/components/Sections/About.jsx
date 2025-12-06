@@ -53,7 +53,7 @@ const About = () => {
                             }}>
                                 <img
                                     src={`${import.meta.env.BASE_URL}assets/images/profile.jpg`}
-                                    alt="Profile"
+                                    alt="Siddhartha Sadhukhan Profile Picture"
                                     style={{
                                         width: '100%',
                                         height: 'auto',
