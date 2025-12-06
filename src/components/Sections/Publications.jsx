@@ -13,15 +13,16 @@ const Publications = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
+                    style={{ width: '100%' }}
                 >
-                    <h2 style={{ display: 'flex', alignItems: 'center', whiteSpace: 'nowrap', fontSize: '2rem', marginBottom: '2rem', color: 'var(--text-color)' }}>
-                        <span style={{ color: 'var(--accent-color)', marginRight: '10px', fontSize: '1.5rem', fontFamily: 'var(--font-mono)' }}>04.</span>
+                    <h2 className="section-header">
+                        <span className="section-header-number">04.</span>
                         Publications
-                        <span style={{ display: 'block', height: '1px', width: '200px', background: 'var(--border-color)', marginLeft: '20px' }}></span>
+                        <span className="section-header-line"></span>
                     </h2>
 
                     <div className="prose">
-                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content}</ReactMarkdown>}
+                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content.replace(/^##\s*Publications/m, '')}</ReactMarkdown>}
                     </div>
                 </motion.div>
             </div>

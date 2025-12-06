@@ -13,6 +13,7 @@ const Projects = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
+                    style={{ width: '100%' }}
                 >
                     <h2 className="section-header">
                         <span className="section-header-number">03.</span>
@@ -21,7 +22,7 @@ const Projects = () => {
                     </h2>
 
                     <div className="prose">
-                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content.replace('## Personal Projects', '')}</ReactMarkdown>}
+                        {loading ? <p>Loading...</p> : <ReactMarkdown>{content.replace(/^##\s*Personal Projects/m, '')}</ReactMarkdown>}
                     </div>
                 </motion.div>
             </div>

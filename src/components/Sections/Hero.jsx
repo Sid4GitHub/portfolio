@@ -9,7 +9,7 @@ const Hero = () => {
     const two = <h2 style={{ color: 'var(--text-color)', fontSize: 'clamp(40px, 8vw, 80px)', lineHeight: 1.1 }}>Siddhartha Sadhukhan.</h2>;
     const three = <h3 style={{ color: 'var(--text-secondary)', fontSize: 'clamp(30px, 6vw, 60px)', lineHeight: 1.1, marginTop: '10px' }}>I build the platforms for data.</h3>;
     const four = (
-        <div style={{ marginTop: '20px', maxWidth: '540px' }}>
+        <div style={{ marginTop: '20px' }}>
             {loading ? <p>Loading...</p> : (
                 <div className="prose" style={{ fontSize: '1.1rem' }}>
                     <ReactMarkdown>{content.replace('# Siddhartha Sadhukhan', '').replace('## Software Engineer - III', '')}</ReactMarkdown>
@@ -43,16 +43,18 @@ const Hero = () => {
     return (
         <section id="hero" className="section">
             <div className="container">
-                {items.map((item, i) => (
-                    <motion.div
-                        key={i}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.1 + i * 0.1, duration: 0.5 }}
-                    >
-                        {item}
-                    </motion.div>
-                ))}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    style={{ width: '100%' }}
+                >
+                    {one}
+                    {two}
+                    {three}
+                    {four}
+                    {five}
+                </motion.div>
             </div>
         </section>
     );
